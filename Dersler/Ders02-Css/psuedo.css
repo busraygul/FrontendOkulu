@@ -1,0 +1,47 @@
+.link {
+  font-size: 30px;
+  color: blue;
+}
+.link:active {
+  color: green;
+}
+.link:visited {
+  color: red;
+}
+.link:hover {
+  color: yellow;
+}
+.list_item {
+  color: red;
+  list-style-type: none;
+  font-size: 30px;
+}
+/* .list_item:first-child {
+  color: blue;
+}
+.list_item:last-child {
+  color: green;
+}
+.list_item:nth-child(even) {
+  background-color: rgb(228, 8, 12);
+} */
+.list_item:nth-child(odd) {
+  color: rgb(44, 87, 204);
+}
+.list_item:nth-child(3) {
+  color: rgb(63, 213, 13);
+}
+.list_item:first-letter {
+  color: blue;
+  font-size: 50px;
+}
+.text::before {
+  content: "Ben Başa Eklendim!";
+  font-size: 24px;
+  color: red;
+}
+.text::after {
+  content: " Ben Sona Eklendim!";
+  font-size: 24px;
+  color: red;
+}

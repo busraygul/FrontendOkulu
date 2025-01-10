@@ -1,0 +1,31 @@
+@charset "UTF-8";
+.container {
+  display: flex;
+}
+.container:hover {
+  background-color: darkgray;
+}
+.container .box1, .container .box3 {
+  width: 150px;
+  height: 150px;
+  background-color: red;
+}
+.container .box2 {
+  width: 150px;
+  height: 200px;
+  background-color: orange;
+}
+.container .box3 {
+  /* box1'in özelliklerini box3'e aktarır */
+  width: 300px; /* box1'in width değerini değiştirir */
+}
+.container .box4 {
+  width: 150px;
+  height: 400px;
+  background-color: green;
+}
+.container .box4.deneme {
+  background-color: blue;
+}
+
+/*# sourceMappingURL=main.css.map */

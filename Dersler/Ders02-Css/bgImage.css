@@ -1,0 +1,29 @@
+.bgImage {
+  background-image: url("https://cdn.pixabay.com/photo/2023/02/01/21/40/pink-7761356_640.png");
+  width: 100%;
+  height: 300px;
+  background-position-x: center;
+  background-position-y: center;
+  background-size: cover;
+  color: rgb(239, 8, 8);
+}
+.title {
+  font-size: 30px;
+}
+.paragraf {
+  font-size: 24px;
+}
+@media screen and (max-width: 760px) {
+  /*760px den küçük olunca burada olan komutlar çalışıyor */
+  .bgImage {
+    width: 500px;
+    height: 200px;
+    color: rgb(54, 8, 239);
+  }
+  .title {
+    font-size: 24px;
+  }
+  .paragraf {
+    font-size: 18px;
+  }
+}

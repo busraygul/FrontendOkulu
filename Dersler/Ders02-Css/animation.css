@@ -1,0 +1,39 @@
+body {
+  display: flex;
+  height: 100vh;
+  background-color: darkgrey;
+  margin: 0;
+  padding: 0;
+}
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  /* transition-property: background-color;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out; */
+  /* transition: all 0.5s ease-in-out; üstte yazılan yorum satırlarının hepsini tek satırda yazdık */
+  animation-name: kutucuk; /* kutucuk adında bir animasyon oluşturduk */
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite; /* git gel yapıyor */
+}
+.box:hover {
+  background-color: chartreuse;
+  /* width: 50px;
+  height: 200px; */
+}
+@keyframes kutucuk {
+  0% {
+    transform: translateX(0px);
+    background-color: red;
+  }
+  50% {
+    transform: translateX(400px);
+    background-color: blue;
+  }
+  100% {
+    transform: translateX(0px); /*geri dönüyor.*/
+    background-color: red;
+  } /*bu son kısım olmasa da olur çünkü yukarıda infinitive döngüsü var. */
+}
