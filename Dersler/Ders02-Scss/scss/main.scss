@@ -10,7 +10,7 @@ $x100: 100px;
 
 .container {
   display: flex;
-  &:hover {
+  &:hover { /* container üzerine gelindiğinde */
     background-color: darkgray;
   }
   .box1 {
@@ -25,7 +25,7 @@ $x100: 100px;
   }
   .box4 {
     @include boxMixin(green, $x150, $x100 * 4);
-    &.deneme {
+    &.deneme { /* css de box4.deneme olarak yazılır. */
       background-color: blue;
     }
   }

@@ -1,6 +1,6 @@
 body {
   display: flex;
-  height: 100vh;
+  height: 100vh; /*ekran yüksekliği kadar olacak */
   background-color: darkgrey;
   margin: 0;
   padding: 0;
@@ -11,12 +11,15 @@ body {
   background-color: red;
   /* transition-property: background-color;
   transition-duration: 0.5s;
-  transition-timing-function: ease-in-out; */
+  transition-timing-function: ease-in-out; */ 
+
   /* transition: all 0.5s ease-in-out; üstte yazılan yorum satırlarının hepsini tek satırda yazdık */
-  animation-name: kutucuk; /* kutucuk adında bir animasyon oluşturduk */
+
+  /* animation-name: kutucuk; -kutucuk adında bir animasyon oluşturduk. 
   animation-duration: 2s;
   animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite; /* git gel yapıyor */
+  animation-iteration-count: infinite; git gel yapıyor */
+  animation: kutucuk 2s ease-in-out infinite; /* yukarıdaki 4 satırın hepsini tek satırda yazdık */
 }
 .box:hover {
   background-color: chartreuse;
@@ -31,6 +34,10 @@ body {
   50% {
     transform: translateX(400px);
     background-color: blue;
+  }
+  75% {
+    transform: translateY(400px);
+    background-color: green;
   }
   100% {
     transform: translateX(0px); /*geri dönüyor.*/

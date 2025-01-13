@@ -17,8 +17,9 @@ p {
   background-color: rgb(231, 153, 216);
   display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: space-evenly;
+  /* flex-direction: row-reverse; tersten sıralar */
+  align-items: center; /* flex direction a row dediğimiz için dikayede ortalar*/
+   justify-content: space-evenly; /* aralarında eşit boşluk bırakır */
   flex-wrap: wrap; /*yan yana sığmayınca aşağı doğru kayıyor*/
 }
 .box {

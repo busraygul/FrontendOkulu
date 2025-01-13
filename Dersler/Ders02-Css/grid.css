@@ -1,0 +1,29 @@
+body{
+    margin: 0;
+}
+.container{
+    height: 600px;
+    background-color: bisque;
+    padding: 20px;
+    display: grid; 
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    /* grid-template-columns: 150px 150px 150px 150px 150px 150px;   */
+    /* grid-template-columns: repeat(6, 150px); */
+    /* grid-template-columns: auto auto auto auto auto auto; tüm sayfaya eşit sığdırdı */
+    /* grid-template-columns: 150px auto auto auto auto 150px;  */
+    /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr 2fr; */
+    /* grid-template-columns: repeat(6, 1fr); */
+    /* grid-template-columns: repeat(2,1fr); 2 tanesini yan yana koydu */
+    /* grid-template-columns: repeat(auto-fill,100px); */
+    /* grid-template-columns: repeat(auto-fill,minmax(100px,1fr)); kutunun içi 100 px den küçük olmadan diğer kutucuğu aşağıya kaydırıyor. yani kutunun içi 100pxden küçük olamıyor. */
+    grid-template-columns: repeat(auto-fit,minmax(150px,1fr)); 
+    /* grid-template-rows: repeat(3, 100px); */
+
+
+}
+.item{
+    background-color: brown;
+    padding: 20px;
+}

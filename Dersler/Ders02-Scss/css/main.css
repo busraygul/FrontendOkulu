@@ -2,7 +2,7 @@
 .container {
   display: flex;
 }
-.container:hover {
+.container:hover { /* container üzerine gelindiğinde */
   background-color: darkgray;
 }
 .container .box1, .container .box3 {
@@ -24,7 +24,7 @@
   height: 400px;
   background-color: green;
 }
-.container .box4.deneme {
+.container .box4.deneme { /* css de box4.deneme olarak yazılır. */
   background-color: blue;
 }
 

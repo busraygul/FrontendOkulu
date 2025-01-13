@@ -1,17 +1,17 @@
-.link {
+.link { 
   font-size: 30px;
   color: blue;
 }
-.link:active {
+.link:active {  /* tıklanınca */
   color: green;
 }
 .link:visited {
   color: red;
 }
-.link:hover {
+.link:hover { /* mouse üzerine gelince */
   color: yellow;
 }
-.list_item {
+.list_item { 
   color: red;
   list-style-type: none;
   font-size: 30px;
@@ -31,16 +31,18 @@
 .list_item:nth-child(3) {
   color: rgb(63, 213, 13);
 }
+
+/* Pseudo Element */
 .list_item:first-letter {
   color: blue;
   font-size: 50px;
 }
-.text::before {
+.text::before { /* text'in başına ekleme yapar ve normal yazı gibi seçilemez. */
   content: "Ben Başa Eklendim!";
   font-size: 24px;
   color: red;
 }
-.text::after {
+.text::after { /* text'in sonuna ekleme yapar ve normal yazı gibi seçilemez. */
   content: " Ben Sona Eklendim!";
   font-size: 24px;
   color: red;
