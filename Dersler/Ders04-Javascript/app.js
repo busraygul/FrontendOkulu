@@ -63,21 +63,21 @@ console.log(typeof isNull);
 
 //OBJECT-Nesne!
 
-var user = {
-name: 'Büşra',
-age: 21,
-isActive: true,
-notlar:{
-    mat:100,
-    fizik:90,
-},
-favoriteColors:['kırmızı','mavi','yeşil'],
+// var user = {
+// name: 'Büşra',
+// age: 21,
+// isActive: true,
+// notlar:{
+//     mat:100,
+//     fizik:90,
+// },
+// favoriteColors:['kırmızı','mavi','yeşil'],
 
-};
-console.log(user);
-console.log(typeof user);
-console.log(user.name);
-console.log(user.notlar.mat);
+// };
+// console.log(user);
+// console.log(typeof user);
+// console.log(user.name);
+// console.log(user.notlar.mat);
 
 //ARRAY-Diziler!
 var fruits = ['elma','armut','muz'];
@@ -330,16 +330,89 @@ let value;
 
 //Döngüler
 //For Döngüsü
-for (let i = 0; i < 10; i++) {
-    if(i==3){
-        //break;
-        continue;//3'ü atlar.
-    }
-    console.log(i);
+// for (let i = 0; i < 10; i++) {
+//     if(i==3){
+//         //break;
+//         continue;//3'ü atlar.
+//     }
+//     console.log(i);
     
+// }
+// const langs = ["Python","Java","C++","Javascript"];
+// for (let i=0;i<=langs.length-1;i++){
+//     console.log(langs[i]);
+// }
+
+//Functions
+// function merhaba(){
+//     console.log("Merhaba");
+// }
+// merhaba();  
+
+function merhaba(){
+    console.log("Merhaba");
 }
+console.log(merhaba());  
+//böyle de yazdırılabilir.
+
+// function user(name, age){
+//console.log(`İsim:${name},Yaş:${age}`);
+// }
+// user("Büşra",21);
+function user(name ="Bilgi Yok", age = "Bilgi Yok"){
+console.log(`İsim:${name},Yaş:${age}`);
+}
+user("Büşra");
+
+//Return Fonksiyonu
+
+// function square(x){
+//     return x*x;
+// }
+// const result = square(5)*3;
+// console.log(result);
+
+//Arrow Function
+// const square =(x) => {
+//     return x*x;
+// }
+const square = x => x*x;//üstteki fonksiyonun kısa hali
+console.log(square(4));
+
+//While Döngüsü
+let i = 0;
+// while(i<10){
+//     console.log(i);
+//     i++;
+// }
+
+// while(i<10){
+//     if(i==3){
+//         i++;
+//         continue;
+//     }
+//     console.log(i);
+//     i++;
+// }
+
+//Do While Döngüsü
+
+// do{
+//     console.log(i);
+//     i++;
+// }
+// while(i>10);
+
+//ForEach Döngüsü
 const langs = ["Python","Java","C++","Javascript"];
-for (let i=0;i<=langs.length-1;i++){
-    console.log(langs[i]);
+langs.forEach(function(lang,index){
+    console.log(lang,index);
+});
+
+//Map Fonksiyonu
+langs.map(function(lang,index){
+    console.log(lang,index);
 }
-//console.log(value);
+);
+
+
