@@ -103,10 +103,12 @@ let user = {
 };
 let { name, age, ...geriKalanlar } = user;
 console.log(name,age, geriKalanlar);//name i yazar geri kalanları obje olarak yazar.
+//obje anahtar kelimelerle aynı olmalıdır.
 
 let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 let [a, b, ...c] = numbers;
 console.log(a, b, c);
+//arraylar de anahtar kelime olmadığı için kendi a,b demiş.yani obje gibi anahtar kelime olmaz.
 
 
 
