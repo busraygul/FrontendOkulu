@@ -50,7 +50,7 @@ class Request {
         method: "DELETE",
       });
       if (!response.ok) {
-        throw new Error("Bir hata oluştu ");
+        throw new Error("Bir hata oluştu. ");
       }
       const res = "Veri Silme İşlemi Başarılı";
       return res;
